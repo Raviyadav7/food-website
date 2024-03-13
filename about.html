@@ -50,7 +50,35 @@
         </div>
     </header>
     <div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form id="wf-form-Contact-Form" class="contact-form"  aria-label="Contact Form" name="contact" method="POST" data-netlify="true"  >
+            <!-- Your form fields here -->
+            <div class="form-field-wrapper" style="margin-top: 5px;">
+              <label for="name" class="form-label">Name</label>
+              <input class="form-input is-last w-input" maxlength="256"
+                     name="name" 
+                     placeholder="Name" type="text" id="Contact-Name"
+                     required>
+            </div>
+            <div class="form-field-wrapper">
+              <label for="email" class="form-label">Email</label>
+              <input class="form-input is-last w-input" maxlength="256"
+                     name="email" 
+                     placeholder="Email" type="email" id="Contact-Email"
+                     required>
+            </div>
+            <div class="form-field-wrapper">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input class="form-input is-last w-input" maxlength="256"
+                     name="phone"
+                     placeholder="Phone Number" type="tel"
+                     id="Contact-Phone" required>
+            </div>
+            <!-- ... -->
+              <button type="submit"
+                      class="w-commerce-commerceaddtocartbutton button max-width-full"
+                      value="Send" name="">Send <i class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></button>
+          </form>
+        <!-- <form name="contact" method="POST" data-netlify="true">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>
             </p>
@@ -69,7 +97,7 @@
             <p>
               <button type="submit">Send</button>
             </p>
-          </form>
+          </form> -->
     </div>
     
 </body>
